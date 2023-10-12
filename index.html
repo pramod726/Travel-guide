@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+    data-tag="font"
+    />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <script>
+        function handleSearchClick(event) {
+          event.preventDefault(); // Prevent the form from submitting traditionally
+        
+          // Get the user's input from the text field
+          const searchQuery = document.querySelector("#searchform input[name='search']").value;
+          console.log('Search query : ' + searchQuery);
+        
+          // Redirect to location.html with the query parameter
+          window.location.href = `location.html?searchQuery=${encodeURIComponent(searchQuery)}`;
+        }          
+      </script>
+
+
+    <header id="home">
+        <div class="container1">
+            <div class="con1">
+                <a href="#home">Tour & Travel</a>
+            </div>
+            
+            <div class="con2">
+                <div class="home">
+                    <a href="index.html"> Home </a>
+                </div>
+                <a href="#about"> About </a>
+                <a href=""> Destination </a>
+                <a href="location.html">Tour</a>
+            </div>
+
+            <div class="con3">
+                <a href=""> Book Now </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main >
+        <div class="cont1">
+            <div class="cont11">
+                <h1> Explore the world with us. </h1>
+            </div>
+
+            <form id="searchform" action="location.html" method="get">
+            <div class="cont22">
+                
+                <div class="location" id="location-input" >
+                    <input type="text" placeholder="Location" class="location-input" name="search">
+                </div>
+                <div class="date" id="date-input">
+                    <input type="date" placeholder="Date" class="date-input" name="date">
+                </div>
+                <div class="guest" id="guest-input"> 
+                    <input type="number" placeholder="Guest" class="guest-input">
+                </div>
+                <div class="explore" onclick="handleSearchClick(event)" >
+                    <button type="submit" >Explore</button>
+                </div>
+            </div>
+            </form>
+            <div class="cont23"></div>
+        </div>
+        
+        
+        
+
+
+        <div class="explore-new-locations">
+            <div class="exp">
+                <h2>Explore Top Locations</h2>
+            </div>
+            <div class="exprow1 exprow">
+                <div class="loc1 loc">
+                    <div class="img1 img">
+                        <img src="home_img1.jpg" alt="Img1">
+                    </div>
+                    <h4>Ajanta Caves</h4>
+                    <p>Lorem ipsum dolor, sit amet elit. Inventore  tempora nisi quod, nesciunt assumenda. </p>
+    
+                </div>
+    
+                <div class="loc2 loc">
+                    <div class="img2 img">
+                        <img src="home_img2.jpg" alt="Img2">
+                    </div>
+                    <h4>Taj Mahal</h4>
+                    <p>Lorem ipsum dolor, sit amet elit. Inventore  tempora nisi quod, nesciunt assumenda. </p>
+    
+                </div>
+    
+                <div class="loc3 loc">
+                    <div class="img3 img">
+                        <img src="" alt="Img3">
+                    </div>
+                    <h4>Ajanta Caves</h4>
+                    <p>Lorem ipsum dolor, sit amet elit. Inventore  tempora nisi quod, nesciunt assumenda. </p>
+    
+                </div>
+            </div>
+
+            <div class="exprow2 exprow">
+                <div class="loc1 loc">
+                    <div class="img1 img">
+                        <img src="" alt="Img4">
+                    </div>
+                    <h4>Ajanta Caves</h4>
+                    <p>Lorem ipsum dolor, sit amet elit. Inventore  tempora nisi quod, nesciunt assumenda. </p>
+    
+                </div>
+    
+                <div class="loc2 loc">
+                    <div class="img2 img">
+                        <img src="" alt="Img5">
+                    </div>
+                    <h4>Ajanta Caves</h4>
+                    <p>Lorem ipsum dolor, sit amet elit. Inventore  tempora nisi quod, nesciunt assumenda. </p>
+    
+                </div>
+    
+                <div class="loc3 loc">
+                    <div class="img3 img">
+                        <img src="" alt="Img6">
+                    </div>
+                    <h4>Ajanta Caves</h4>
+                    <p>Lorem ipsum dolor, sit amet elit. Inventore  tempora nisi quod, nesciunt assumenda. </p>
+    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about" id="about">
+            <h2> About </h2>
+        </div>
+
+        <div class="about-section">
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut laborum assumenda optio aliquam expedita, saepe porro asperiores deleniti error temporibus fugiat delectus suscipit alias voluptates quod tempora, facilis voluptatum consectetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus tempore vitae dolorem neque eveniet nobis, quas, ducimus molestias repudiandae aut sed illum distinctio maiores fuga eligendi aspernatur beatae quasi?
+                </p>
+            </div>
+
+            <div class="aboutimg">
+                <img src="about-img.jpg" alt="IMG about">
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
